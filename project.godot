@@ -1,0 +1,23 @@
+; Highway Racing 3D - Godot 4 project
+config_version=5
+
+[application]
+config/name="Highway Racing 3D"
+run/main_scene="res://scenes/main.tscn"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+environment/defaults/default_clear_color=Color(0.38, 0.62, 0.82, 1)
+
+[input]
+move_left={"deadzone":0.5,"events":[Object(InputEventKey,"physical_keycode":65),Object(InputEventKey,"physical_keycode":16777231)]}
+move_right={"deadzone":0.5,"events":[Object(InputEventKey,"physical_keycode":68),Object(InputEventKey,"physical_keycode":16777233)]}
+brake={"deadzone":0.5,"events":[Object(InputEventKey,"physical_keycode":83),Object(InputEventKey,"physical_keycode":16777237)]}
+nitro={"deadzone":0.5,"events":[Object(InputEventKey,"physical_keycode":32)]}
